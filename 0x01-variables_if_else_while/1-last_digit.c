@@ -1,3 +1,6 @@
+#include <stdio.h>
+#include <time.h>
+#include <stdlib.h>
 /**
  * main - Prints the last digit of a randomly generated number.
  *
@@ -25,7 +28,7 @@ int main(void)
 	}
 	else
 	{
-		print("Last digit of %d is %d and is 0\n",
+		printf("Last digit of %d is %d and is 0\n",
 				n, n % 10);
 	}
 
