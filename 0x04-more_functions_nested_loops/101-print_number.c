@@ -1,10 +1,8 @@
 #include "main.h"
-#include <stdio.h>
+
 /**
- * print_number - print int with putchar
- * @n: takes number, hello
- *
- * Return: void
+ * print_number - print integer
+ * @n: integer to be printed
  */
 void print_number(int n)
 {
@@ -12,14 +10,16 @@ void print_number(int n)
 
 	if (n < 0)
 	{
+		n1 = -n;
 		_putchar('-');
-		m = -n;
 	}
 	else
 	{
-		m = n;
+		n1 = n;
 	}
-	if (m / 10 != 0)
-		print_number(m / 10);
-	_putchar((m % 10) + '0');
+	if (n1 / 10)
+	{
+		print_number(n1 / 10);
+	}
+	_putchar((n1 % 10) + '0');
 }
