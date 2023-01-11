@@ -2,11 +2,14 @@
 #include <stdlib.h>
 #include <stdio.h>
 /**
- * *str_concat - concatenates two strings
+ * *str_concat - concatenates 2 strings
+ * a NULL string is treated as an empty string.
  * @s1: string to concatenate
  * @s2: other string to concatenate
  *
- * Return: pointer to the new string created (Success), or NULL (Error)
+ * Return: pointer to newly allocated memory which
+ * has s1, s2 and null byte.
+ * NULL or failure.
  */
 char *str_concat(char *s1, char *s2)
 {
